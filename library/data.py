@@ -7,7 +7,7 @@ class LoadData:
         """
         Allows the user to load data from the included sample of the TREC covid database.
         """
-        self.__path = os.path.dirname(os.path.realpath(__file__)) 
+        self.__path = '\\'.join(os.path.dirname(os.path.realpath(__file__)).split('\\')[:-1])
     
     def _printpath(self):
         print(self.__path)
